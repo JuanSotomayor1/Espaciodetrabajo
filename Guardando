@@ -1,232 +1,32 @@
-<div style="max-width: 800px; margin: auto; font-family: Arial, sans-serif; color: #333;">
-  
-  <!-- Botones para cambiar el idioma -->
-  <div style="text-align: right; margin-bottom: 20px;">
-    <button onclick="switchLang('es')" style="margin-right: 10px; padding: 6px 12px; background-color: #0077cc; color: #fff; border: none; border-radius: 4px;">ES</button>
-    <button onclick="switchLang('en')" style="margin-right: 10px; padding: 6px 12px; background-color: #0077cc; color: #fff; border: none; border-radius: 4px;">EN</button>
-    <button onclick="switchLang('de')" style="margin-right: 10px; padding: 6px 12px; background-color: #0077cc; color: #fff; border: none; border-radius: 4px;">DE</button>
-    <button onclick="switchLang('fr')" style="margin-right: 10px; padding: 6px 12px; background-color: #0077cc; color: #fff; border: none; border-radius: 4px;">FR</button>
-    <button onclick="switchLang('pt')" style="padding: 6px 12px; background-color: #0077cc; color: #fff; border: none; border-radius: 4px;">PT</button>
-  </div>
+/* Modo oscuro */
+body {
+    background-color: #000000; /* Fondo oscuro */
+    color: #FFFFFF; /* Texto blanco */
+}
 
-  <!-- Contenido en español -->
-  <div id="lang-es">
-    <h2 style="color: #0077cc;">Preguntas Frecuentes</h2>
+a {
+    color: #FFD700; /* Enlaces en color dorado para destacarlos */
+}
 
-    <div>
-      <button class="accordion">📦 ¿Dónde se fabrican los productos?</button>
-      <div class="panel">
-        <p>Trabajamos con proveedores de impresión como <strong>Gelato</strong> y <strong>Printify</strong>. La producción se realiza en centros de impresión ubicados en Europa y Estados Unidos, dependiendo de la ubicación del cliente y el producto solicitado.</p>
-      </div>
+header, footer {
+    background-color: #1E1E1E; /* Fondo oscuro para la cabecera y pie de página */
+}
 
-      <button class="accordion">🚚 ¿Cuánto tardan en llegar los pedidos?</button>
-      <div class="panel">
-        <p><strong>Europa (Gelato):</strong> 3-7 días hábiles.<br><strong>EE.UU./Internacional (Printify):</strong> 7-14 días hábiles.</p>
-      </div>
+button, .btn {
+    background-color: #333333; /* Botones con fondo oscuro */
+    color: #FFFFFF; /* Texto blanco en los botones */
+}
 
-      <button class="accordion">💸 ¿Cuál es el coste del envío?</button>
-      <div class="panel">
-        <p>El coste del envío se calcula automáticamente en el proceso de pago, dependiendo de la dirección de entrega y el producto seleccionado.</p>
-      </div>
+.navbar, .navbar-toggler {
+    background-color: #000000; /* Fondo oscuro para la barra de navegación */
+}
 
-      <button class="accordion">🔁 ¿Puedo devolver un producto?</button>
-      <div class="panel">
-        <p>Al ser productos hechos a pedido, solo se aceptan devoluciones si el artículo llega dañado o con errores de fabricación. En este caso, por favor contacta con nosotros a través de nuestro correo electrónico. dizaindis@gmail.com</p>
-      </div>
+/* Modificar el color del texto en áreas específicas */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF; /* Encabezados en blanco */
+}
 
-      <button class="accordion">🎁 ¿Ofrecen descuentos por compras grandes o para empresas?</button>
-      <div class="panel">
-        <p>Sí, ofrecemos precios especiales para compras al por mayor o empresas. Contáctanos y te haremos una propuesta personalizada.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contenido en inglés -->
-  <div id="lang-en" style="display: none;">
-    <h2 style="color: #0077cc;">Frequently Asked Questions</h2>
-
-    <div>
-      <button class="accordion">📦 Where are the products made?</button>
-      <div class="panel">
-        <p>We work with print-on-demand suppliers like <strong>Gelato</strong> and <strong>Printify</strong>. Products are produced in facilities located in Europe and the U.S., depending on the customer’s location and the product ordered.</p>
-      </div>
-
-      <button class="accordion">🚚 How long does shipping take?</button>
-      <div class="panel">
-        <p><strong>Europe (Gelato):</strong> 3–7 business days.<br><strong>USA/International (Printify):</strong> 7–14 business days.</p>
-      </div>
-
-      <button class="accordion">💸 What is the shipping cost?</button>
-      <div class="panel">
-        <p>The shipping cost is automatically calculated at checkout based on your delivery address and the product selected.</p>
-      </div>
-
-      <button class="accordion">🔁 Can I return a product?</button>
-      <div class="panel">
-        <p>Since our products are made to order, we only accept returns if the item arrives damaged or with manufacturing errors. In that case, please contact us via email. dizaindis@gmail.com</p>
-      </div>
-
-      <button class="accordion">🎁 Do you offer discounts for bulk orders or businesses?</button>
-      <div class="panel">
-        <p>Yes, we offer special pricing for bulk purchases or businesses. Get in touch with us and we’ll make a custom offer for you.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contenido en alemán -->
-  <div id="lang-de" style="display: none;">
-    <h2 style="color: #0077cc;">Häufig gestellte Fragen</h2>
-
-    <div>
-      <button class="accordion">📦 Wo werden die Produkte hergestellt?</button>
-      <div class="panel">
-        <p>Wir arbeiten mit Druck-Demand-Anbietern wie <strong>Gelato</strong> und <strong>Printify</strong>. Die Produkte werden in Einrichtungen in Europa und den USA produziert, je nach Kundenstandort und bestelltem Produkt.</p>
-      </div>
-
-      <button class="accordion">🚚 Wie lange dauert der Versand?</button>
-      <div class="panel">
-        <p><strong>Europa (Gelato):</strong> 3-7 Werktage.<br><strong>USA/International (Printify):</strong> 7-14 Werktage.</p>
-      </div>
-
-      <button class="accordion">💸 Wie hoch sind die Versandkosten?</button>
-      <div class="panel">
-        <p>Die Versandkosten werden an der Kasse basierend auf Ihrer Lieferadresse und dem ausgewählten Produkt automatisch berechnet.</p>
-      </div>
-
-      <button class="accordion">🔁 Kann ich ein Produkt zurückgeben?</button>
-      <div class="panel">
-        <p>Da unsere Produkte nach Bestellung gefertigt werden, akzeptieren wir Rücksendungen nur, wenn der Artikel beschädigt oder fehlerhaft ist. In diesem Fall kontaktieren Sie uns bitte per E-Mail. dizaindis@gmail.com </p>
-      </div>
-
-      <button class="accordion">🎁 Bieten Sie Rabatte für Großbestellungen oder Unternehmen an?</button>
-      <div class="panel">
-        <p>Ja, wir bieten Sonderpreise für Großbestellungen oder Unternehmen an. Kontaktieren Sie uns und wir erstellen Ihnen ein individuelles Angebot.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contenido en francés -->
-  <div id="lang-fr" style="display: none;">
-    <h2 style="color: #0077cc;">Questions Fréquemment Posées</h2>
-
-    <div>
-      <button class="accordion">📦 Où sont fabriqués les produits ?</button>
-      <div class="panel">
-        <p>Nous travaillons avec des fournisseurs de produits à la demande comme <strong>Gelato</strong> et <strong>Printify</strong>. Les produits sont fabriqués dans des installations situées en Europe et aux États-Unis, en fonction de la localisation du client et du produit commandé.</p>
-      </div>
-
-      <button class="accordion">🚚 Combien de temps faut-il pour la livraison ?</button>
-      <div class="panel">
-        <p><strong>Europe (Gelato) :</strong> 3 à 7 jours ouvrables.<br><strong>USA/International (Printify) :</strong> 7 à 14 jours ouvrables.</p>
-      </div>
-
-      <button class="accordion">💸 Quel est le coût de la livraison ?</button>
-      <div class="panel">
-        <p>Le coût de la livraison est calculé automatiquement au moment du paiement en fonction de l'adresse de livraison et du produit sélectionné.</p>
-      </div>
-
-      <button class="accordion">🔁 Puis-je retourner un produit ?</button>
-      <div class="panel">
-        <p>Étant donné que nos produits sont fabriqués à la demande, nous n'acceptons les retours que si l'article est endommagé ou comporte des erreurs de fabrication. Dans ce cas, veuillez nous contacter par email. dizaindis@gmail.com </p>
-      </div>
-
-      <button class="accordion">🎁 Offrez-vous des réductions pour les achats en gros ou pour les entreprises ?</button>
-      <div class="panel">
-        <p>Oui, nous proposons des tarifs spéciaux pour les commandes en gros ou les entreprises. Contactez-nous et nous vous ferons une offre personnalisée.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contenido en portugués -->
-  <div id="lang-pt" style="display: none;">
-    <h2 style="color: #0077cc;">Perguntas Frequentes</h2>
-
-    <div>
-      <button class="accordion">📦 Onde os produtos são fabricados?</button>
-      <div class="panel">
-        <p>Trabalhamos com fornecedores de impressão sob demanda como <strong>Gelato</strong> e <strong>Printify</strong>. A produção é realizada em centros de impressão localizados na Europa e nos Estados Unidos, dependendo da localização do cliente e do produto solicitado.</p>
-      </div>
-
-      <button class="accordion">🚚 Quanto tempo leva para chegar?</button>
-      <div class="panel">
-        <p><strong>Europa (Gelato):</strong> 3-7 dias úteis.<br><strong>EE.UU./Internacional (Printify):</strong> 7-14 dias úteis.</p>
-      </div>
-
-      <button class="accordion">💸 Qual é o custo do envio?</button>
-      <div class="panel">
-        <p>O custo do envio é calculado automaticamente no processo de pagamento, dependendo do endereço de entrega e do produto selecionado.</p>
-      </div>
-
-      <button class="accordion">🔁 Posso devolver um produto?</button>
-      <div class="panel">
-        <p>Como os produtos são feitos sob demanda, aceitamos devoluções apenas se o item chegar danificado ou com erros de fabricação. Nesse caso, entre em contato conosco por e-mail. dizaindis@gmail.com</p>
-      </div>
-
-      <button class="accordion">🎁 Oferecem descontos para compras grandes ou empresas?</button>
-      <div class="panel">
-        <p>Sim, oferecemos preços especiais para compras em grandes quantidades ou empresas. Entre em contato conosco e criaremos uma proposta personalizada.</p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- Estilos y funcionalidad -->
-<style>
-  .accordion {
-    background-color: #f1f1f1;
-    color: #444;
-    cursor: pointer;
-    padding: 12px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    transition: 0.3s;
-    border-bottom: 1px solid #ddd;
-    font-weight: bold;
-  }
-
-  .accordion:hover {
-    background-color: #e6f0fa;
-  }
-
-  .panel {
-    padding: 0 18px;
-    background-color: #fafafa;
-    display: none;
-    overflow: hidden;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .panel p {
-    margin: 10px 0;
-  }
-</style>
-
-<script>
-  // Acordeón
-  const acc = document.getElementsByClassName("accordion");
-  for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      const panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-
-  // Cambio de idioma
-  function switchLang(lang) {
-    // Ocultar todos los idiomas
-    const languages = ['es', 'en', 'de', 'fr', 'pt'];
-    languages.forEach(language => {
-      document.getElementById(`lang-${language}`).style.display = "none";
-    });
-    // Mostrar el idioma seleccionado
-    document.getElementById(`lang-${lang}`).style.display = "block";
-  }
-</script>
+/* Modificar los fondos en áreas adicionales si es necesario */
+section, .main-content {
+    background-color: #121212; /* Fondo oscuro para las secciones */
+}
